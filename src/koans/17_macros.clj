@@ -30,7 +30,7 @@
   (= "Hello, Macros!" (hello "Macros!"))
 
   "I can haz infix?"
-  (= (+ 9 1) (infix (9 + 1)))
+  (= 10 (infix (9 + 1)))
 
   "Remember, these are nothing but code transformations"
   (= '(+ 9 1) (macroexpand '(infix (9 + 1))))
